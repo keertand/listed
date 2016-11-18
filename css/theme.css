@@ -1,0 +1,606 @@
+
+
+@font-face {
+    font-family: brandfont;
+    src: url(fonts/CFExpedition-Regular.ttf);
+}
+
+body
+{
+
+width:100%;
+color:black;
+background-color:white;
+overflow-x:hidden;
+padding-left:10px;
+padding-right:10px;
+cursor:default;
+}
+
+
+.navbar-brand
+{
+		font-family: 'Oswald', sans-serif;
+		font-size:2em;
+		font-weight:bold;
+		color:white;
+}
+
+.favsicon .glyphicon-heart
+{	
+font-size:2em;
+}
+
+.favsicon
+{
+	margin-top:30px;
+	float:right;
+	font-size:2em;
+}
+
+.postedby, .postedby span
+{
+	float:right;	
+}
+
+.navbar,.nav,.navbar-default .navbar-brand
+{
+	background-color:white;
+	color:#011d3a;
+}
+
+.navbar{
+	border-bottom:2px solid #011d3a;
+}
+
+.navbar-brand img
+{
+	width:30px;
+	display:inline-block;
+	margin-bottom:6px;
+	margin-right:8px;
+}
+
+.navbar-brand img:hover
+{
+	animation: rot 0.5s ease-in;
+}
+
+@keyframes rot
+{
+0%
+{
+	transform: rotate(0deg);
+}
+100%
+{
+	-ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);}	
+}
+
+.navbar-right
+{
+	margin-top:10px;
+}
+
+::-webkit-input-placeholder {
+   color: #a7b3c6;
+}
+
+.dp
+{
+	font-size:1.8em;
+	border-radius:50%;
+	border:2px solid black;
+	overflow:hidden;
+	margin-top:6px;
+}
+
+.dp img
+{
+	width:100%;
+}
+
+.block
+{
+	padding:5px;
+	height:300px;	
+}
+
+.links
+{
+	list-style:none;
+	margin-top:30px;
+}
+
+.links li
+{
+	color:white;
+	display:inline;
+	margin:10px;
+	padding:10px;
+	font-size:1.2em;
+}
+
+a:hover,a:visited
+{
+	text-decoration:none;
+}
+
+.links li:hover
+{
+	color:black;
+	background-color:white;
+	}
+
+.cat
+{
+	width:100%;
+}
+
+nav
+{
+	border-bottom:2px solid black;
+}
+
+.product
+{
+	border:3px solid transparent;	
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+.product img
+{
+	height:inherit;
+}
+.product .desc
+{
+	margin-top:-50px;
+	background-color:black;
+	color:white;
+	height:150px;
+	position:absolute;
+	padding:5px;
+	width:100%;
+	
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+
+.product:hover
+{
+	border:3px solid white;	
+}
+
+.desc:hover
+{
+		margin-top:-150px;
+}
+
+.favourites
+{
+	padding-left:50px;
+	padding-right:50px;
+	background-color:#cccccc;
+}
+
+.latest
+{
+	padding-left:50px;
+	padding-right:50px;
+	background-color:#011d3a;
+	}
+	
+.searchcontainer
+{
+	background:url("../images/pattern.png") repeat;
+	background-color:#0351a0;
+}	
+
+.search
+{
+	height:30%;
+	margin-top:300px;
+	
+}
+
+.search input[type=text],.search input[type=placeholder]
+{
+	font-size:2em;
+	width:100%;
+	height:60px;
+	margin:auto;
+	padding:20px;
+	background-color:#0351a0;
+	background-color:white;
+	
+	color:black;
+	border:3px solid white;
+	font-weight:bold;
+}
+
+.search input[type==radio]
+{
+	font-size:1.5em;	
+}
+
+.catcontainer
+{
+	min-height:30px;
+	border-radius:0px 0px 5px 5px;
+	background-color:#f2f2f2;
+	color:black;
+	display:none;
+}
+
+
+.catcontainer ul{
+  list-style: none;
+  width: 100%;
+  max-height:200px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.catcontainer ul li{
+  color: #AAAAAA;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin:20px;
+}
+
+.catcontainer ul li input[type=radio]{
+  position: relative;
+  font-size:3em;
+}
+
+.catcontainer ul li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 25px 25px 25px 80px;
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resultbox
+{
+	width:100%;
+	background-color:#011d3a;
+	color:white;
+	padding:50px;
+	padding-bottom:0px;
+}
+
+.glyphicon-search
+{
+	font-size:2em;
+	color:#0351a0;
+	margin-top:-45px;
+	float:right;
+	margin-right:20px;
+	cursor:hand;
+}
+
+.glyphicon-search:hover
+{
+	color:black;
+}
+
+.glyphicon-th
+{
+float:right;
+margin-top:-45px;	
+color:#cccccc;
+font-size:2em;
+margin-right:80px;
+}
+
+.glyphicon-th:hover
+{
+	color:#0351a0;
+}
+
+.palet
+{
+	margin-bottom:30px;
+	max-height:200px;
+	overflow:hidden;
+}
+
+.palet .imgcont
+{
+	overflow:hidden;
+	
+}
+
+.fat
+{
+	height:100%;
+	width:auto;
+}
+
+.tall
+{
+	width:100%;
+	height:auto;
+}
+
+.productpage
+{
+	background-color:black;
+	color:white;
+	padding-left:0px;
+	padding-top:50px;
+	min-height:800px;
+}
+
+.productdps
+{
+	height:65%;
+	overflow:hidden;
+	padding:0px;
+}
+
+.nameplate .pname
+{
+	font-size:4em;
+	font-weight:bold;
+	background-color:#011d3a;
+}
+
+.description
+{
+	min-height:200px;
+	background-color:#011d3a;
+	color:white;
+	padding:50px;
+}
+
+.rateyo
+{
+	padding:20px;
+	height:60px;
+}
+
+.specification
+{
+	background-color:white;
+	color:black;
+	min-height:300px;
+	padding:5px;
+}
+
+.specs div
+{
+/*	border:2px solid grey;
+*/	padding:20px;
+}
+
+.table tbody tr
+{
+	padding:30px;
+	
+}
+
+.comments
+{
+	color:white;
+	min-height:300px;
+	padding:5px;
+	padding-top:30px;
+	}
+
+
+.comments h2
+{
+	margin-left:10%;
+	padding:20px;
+}
+
+	
+.comment
+{
+	
+	background-color:transparent;
+	margin-bottom:50px;
+
+	}
+
+.commentdp
+{
+	padding:10px;
+	border-radius:50%;
+}
+
+.commentdp img
+{
+	width:100%;
+	border-radius:50%;
+	border:5px solid white;
+}
+
+.commentcontent,.reviewcontent
+{
+	width:100%;
+	padding:30px;
+	font-size:1.2em;
+	background-color:white;
+	color:black;
+}
+
+
+.commentcontent input,.commentcontent input:active,.commentcontent input:focus,.reviewcontent input,.reviewcontent input:active,.reviewcontent input:focus
+{
+	width:100%;
+	height:80px;
+	margin-top:-10px;
+	overflow:hidden;
+	margin-bottom:20px;
+	border:none;
+}
+
+.commentcontent button, .reviewcontent button
+{
+	margin-top:-20px;
+	float:left;
+}
+
+.commentcontent .prrate, .reviewcontent .prrate
+{
+	margin-top:-20px;
+}
+
+.commentcontent p, .reviewcontent p
+{
+	margin-left: 20px;
+}
+
+.actioncentre
+{
+		float:right;
+		margin-top:10px;
+}
+
+.nestedcomment
+{
+	padding:10px;
+	font-size:1.2em;
+	background-color:white;
+	color:black;	
+	margin-top:10px;
+	margin-bottom:10px;
+	
+	overflow:hidden;
+	
+}
+
+.nestedcomment img
+{
+	width:100%;
+	border-radius:5%;
+}
+
+.nestedcomment input
+{
+	width:100%;
+	border-color:transparent;
+}
+
+.arrow
+{width:20px;
+display:inline;
+margin-left:-50px;
+position:absolute;}
+
+.entry
+{
+	padding-bottom:50px;
+}
+
+
+#submitcomment
+{
+	margin-left:-50px;
+}
+
+
+footer
+{
+	border-top:2px solid black;
+}
+
+.productslide
+{
+	
+}
+
+
+.details
+{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+.filler
+{
+	height:200px;
+	width:100%;
+	float:right;
+}
+
+
+
+.unfav
+{
+	color:#e6e6e6;
+}
+
+.fav
+{
+	color:#ff0000;	
+}
+
+.item
+{
+height:100%;
+}
+
+.item img
+{
+	width:100%;
+}
+
+.commentdel
+{
+	float:right;
+	margin-top:-20px;
+	font-size:0.5em;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img
+{
+	max-width:none;
+	
+	
+}
+
+.favno
+{
+	text-align:justify;
+}
+
+.white
+{
+	background-color:white;
+}
+
+.grey
+{
+	background-color:#f2f2f2;
+}
